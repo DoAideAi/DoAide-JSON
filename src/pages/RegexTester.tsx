@@ -102,7 +102,7 @@ export default function RegexTester() {
       <div className="flex flex-wrap gap-2 mb-4">
         <button
           onClick={() => setShowPatterns(!showPatterns)}
-          className={`px-3 py-1.5 rounded-md text-sm font-medium ${showPatterns ? 'bg-gold/20 text-gold' : 'bg-bg-tertiary text-text-secondary hover:bg-border'}`}
+          className={`px-3 py-1.5 rounded-md text-sm font-medium ${showPatterns ? 'bg-da-teal/10 text-da-teal' : 'bg-bg-tertiary text-text-secondary hover:bg-border'}`}
         >
           Common Patterns
         </button>
@@ -174,7 +174,7 @@ export default function RegexTester() {
             {highlighted ? (
               highlighted.map((part, i) =>
                 part.match ? (
-                  <mark key={i} className="bg-gold/30 text-gold rounded px-0.5">{part.text}</mark>
+                  <mark key={i} className="bg-da-teal/15 text-da-teal rounded px-0.5">{part.text}</mark>
                 ) : (
                   <span key={i} className="text-text-primary">{part.text}</span>
                 )
@@ -193,7 +193,7 @@ export default function RegexTester() {
             {matches.map((m, i) => (
               <div key={i} className="flex items-center gap-3 text-sm">
                 <span className="text-text-muted w-8 shrink-0">#{i + 1}</span>
-                <code className="text-gold bg-bg-tertiary px-2 py-0.5 rounded">{m.text}</code>
+                <code className="text-da-teal bg-bg-tertiary px-2 py-0.5 rounded">{m.text}</code>
                 <span className="text-text-muted">at index {m.index}</span>
                 {m.groups.length > 0 && (
                   <span className="text-text-muted">

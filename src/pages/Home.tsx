@@ -15,8 +15,9 @@ export default function Home() {
       <section className="py-16 md:py-24 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            <span className="text-text-primary">DoAide</span>{' '}
-            <span className="italic text-gold">JSON</span>
+            <span className="text-da-teal">DoAide</span>
+            <span className="text-text-muted font-light mx-2">|</span>
+            <span className="text-text-primary">JSON</span>
           </h1>
           <p className="text-lg md:text-xl text-text-secondary mb-2">
             Free Developer Tools — No Login Required
@@ -27,7 +28,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-3">
             <Link
               to="/formatter"
-              className="px-6 py-3 bg-accent text-white rounded-lg font-medium no-underline hover:bg-accent-hover transition-colors"
+              className="px-6 py-3 bg-da-teal text-white rounded-lg font-medium no-underline hover:bg-da-teal-light transition-colors"
             >
               Format JSON
             </Link>
@@ -60,14 +61,14 @@ export default function Home() {
                   <Link
                     key={tool.id}
                     to={tool.path}
-                    className="group p-5 bg-bg-secondary border border-border rounded-xl no-underline hover:border-accent/50 hover:bg-bg-tertiary/50 transition-all"
+                    className="group p-5 bg-bg-secondary border border-border rounded-xl no-underline hover:border-da-teal/40 hover:bg-bg-tertiary/50 transition-all"
                   >
                     <div className="flex items-start gap-3">
-                      <span className="text-2xl w-10 h-10 flex items-center justify-center bg-bg-tertiary rounded-lg text-gold shrink-0 font-mono">
+                      <span className="text-2xl w-10 h-10 flex items-center justify-center bg-da-teal/10 rounded-lg text-da-teal shrink-0 font-mono">
                         {tool.icon}
                       </span>
                       <div>
-                        <h3 className="text-text-primary font-semibold group-hover:text-accent-hover transition-colors">
+                        <h3 className="text-text-primary font-semibold group-hover:text-da-teal transition-colors">
                           {tool.name}
                         </h3>
                         <p className="text-text-muted text-sm mt-1">
@@ -84,16 +85,20 @@ export default function Home() {
 
       <footer className="bg-bg-secondary border-t border-border py-8 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="flex items-center justify-center gap-2 mb-3">
-            <span className="text-lg font-bold text-text-primary">DoAide</span>
-            <span className="text-lg font-bold italic text-gold">JSON</span>
+          <div className="flex items-center justify-center gap-1.5 mb-3">
+            <span className="text-lg font-bold text-da-teal">DoAide</span>
+            <span className="text-text-muted text-lg font-light">|</span>
+            <span className="text-lg font-semibold text-text-primary">JSON</span>
           </div>
-          <p className="text-text-muted text-sm mb-4">
-            Free developer tools. No login. No tracking.
+          <p className="text-text-muted text-sm mb-2">
+            Free developer tools — all processing happens in your browser.
           </p>
-          <p className="text-text-muted text-xs">
-            All processing happens client-side in your browser.
+          <p className="text-text-muted text-xs mb-4">
+            A DoAide Product
           </p>
+          <div className="flex justify-center gap-4 text-xs text-text-muted">
+            <a href="https://doaide.com" className="hover:text-da-teal no-underline transition-colors">doaide.com</a>
+          </div>
         </div>
       </footer>
     </div>

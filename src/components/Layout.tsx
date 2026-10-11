@@ -11,9 +11,10 @@ export default function Layout() {
     <div className="min-h-screen flex flex-col">
       <header className="bg-bg-secondary border-b border-border sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 no-underline">
-            <span className="text-xl font-bold text-text-primary">DoAide</span>
-            <span className="text-xl font-bold italic text-gold">JSON</span>
+          <Link to="/" className="flex items-center gap-1.5 no-underline">
+            <span className="text-xl font-bold text-da-teal">DoAide</span>
+            <span className="text-text-muted text-xl font-light">|</span>
+            <span className="text-xl font-semibold text-text-primary">JSON</span>
           </Link>
 
           <button
@@ -37,7 +38,7 @@ export default function Layout() {
                 to={tool.path}
                 className={`px-3 py-1.5 rounded-md text-sm no-underline transition-colors ${
                   location.pathname === tool.path
-                    ? 'bg-accent/20 text-accent-hover'
+                    ? 'bg-da-teal/10 text-da-teal'
                     : 'text-text-secondary hover:text-text-primary hover:bg-bg-tertiary'
                 }`}
               >
@@ -55,7 +56,7 @@ export default function Layout() {
                     to={tool.path}
                     className={`block px-4 py-2 text-sm no-underline ${
                       location.pathname === tool.path
-                        ? 'bg-accent/20 text-accent-hover'
+                        ? 'bg-da-teal/10 text-da-teal'
                         : 'text-text-secondary hover:text-text-primary hover:bg-bg-tertiary'
                     }`}
                   >
@@ -77,7 +78,7 @@ export default function Layout() {
                 onClick={() => setMenuOpen(false)}
                 className={`block px-3 py-2 rounded-md text-sm no-underline ${
                   location.pathname === tool.path
-                    ? 'bg-accent/20 text-accent-hover'
+                    ? 'bg-da-teal/10 text-da-teal'
                     : 'text-text-secondary hover:text-text-primary'
                 }`}
               >
@@ -96,12 +97,17 @@ export default function Layout() {
       {!isHome && (
         <footer className="bg-bg-secondary border-t border-border py-6 px-4">
           <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-            <Link to="/" className="flex items-center gap-2 no-underline">
-              <span className="text-sm font-bold text-text-primary">DoAide</span>
-              <span className="text-sm font-bold italic text-gold">JSON</span>
-            </Link>
+            <div className="flex items-center gap-3">
+              <Link to="/" className="flex items-center gap-1.5 no-underline">
+                <span className="text-sm font-bold text-da-teal">DoAide</span>
+                <span className="text-text-muted text-sm font-light">|</span>
+                <span className="text-sm font-semibold text-text-primary">JSON</span>
+              </Link>
+              <span className="text-border">·</span>
+              <span className="text-text-muted text-xs">A DoAide Product</span>
+            </div>
             <p className="text-text-muted text-sm">
-              Free developer tools. No login. No tracking. All processing happens in your browser.
+              Free developer tools — all processing happens in your browser.
             </p>
           </div>
         </footer>

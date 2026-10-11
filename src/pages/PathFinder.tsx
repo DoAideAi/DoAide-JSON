@@ -36,7 +36,7 @@ function PathTree({
         {data === null ? (
           <span className="text-text-muted">null</span>
         ) : typeof data === 'string' ? (
-          <span className="text-gold">"{data}"</span>
+          <span className="text-da-teal">"{data}"</span>
         ) : typeof data === 'boolean' ? (
           <span className="text-warning">{String(data)}</span>
         ) : (

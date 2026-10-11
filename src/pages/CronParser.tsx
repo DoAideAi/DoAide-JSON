@@ -158,7 +158,7 @@ export default function CronParser() {
             <div className="space-y-2">
               {nextRuns.map((date, i) => (
                 <div key={i} className="flex items-center gap-3 p-3 bg-bg-secondary border border-border rounded-lg">
-                  <span className="text-gold font-mono text-sm w-6">#{i + 1}</span>
+                  <span className="text-da-teal font-mono text-sm w-6">#{i + 1}</span>
                   <span className="text-text-primary text-sm">{date.toLocaleString()}</span>
                 </div>
               ))}

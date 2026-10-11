@@ -12,7 +12,7 @@ function TreeNode({ data, path, depth }: { data: unknown; path: string; depth: n
   if (data === null) return <span className="text-text-muted">null</span>;
   if (typeof data === 'boolean') return <span className="text-warning">{String(data)}</span>;
   if (typeof data === 'number') return <span className="text-success">{data}</span>;
-  if (typeof data === 'string') return <span className="text-gold">"{data}"</span>;
+  if (typeof data === 'string') return <span className="text-da-teal">"{data}"</span>;
 
   if (Array.isArray(data)) {
     return (

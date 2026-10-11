@@ -46,7 +46,7 @@ export default function Minifier() {
           <div className="ml-auto flex gap-4 text-sm">
             <span className="text-text-muted">Original: <span className="text-text-primary">{stats.original.toLocaleString()} B</span></span>
             <span className="text-text-muted">Minified: <span className="text-success">{stats.minified.toLocaleString()} B</span></span>
-            <span className="text-text-muted">Saved: <span className="text-gold">{stats.saved}%</span></span>
+            <span className="text-text-muted">Saved: <span className="text-da-teal">{stats.saved}%</span></span>
           </div>
         )}
       </div>

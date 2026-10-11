@@ -57,13 +57,13 @@ export default function UrlEncode() {
             <span className="text-text-muted text-sm self-center mx-1">|</span>
             <button
               onClick={() => setEncodeType('component')}
-              className={`px-3 py-1.5 rounded-md text-sm ${encodeType === 'component' ? 'bg-gold/20 text-gold' : 'bg-bg-tertiary text-text-secondary hover:bg-border'}`}
+              className={`px-3 py-1.5 rounded-md text-sm ${encodeType === 'component' ? 'bg-da-teal/10 text-da-teal' : 'bg-bg-tertiary text-text-secondary hover:bg-border'}`}
             >
               Component
             </button>
             <button
               onClick={() => setEncodeType('full')}
-              className={`px-3 py-1.5 rounded-md text-sm ${encodeType === 'full' ? 'bg-gold/20 text-gold' : 'bg-bg-tertiary text-text-secondary hover:bg-border'}`}
+              className={`px-3 py-1.5 rounded-md text-sm ${encodeType === 'full' ? 'bg-da-teal/10 text-da-teal' : 'bg-bg-tertiary text-text-secondary hover:bg-border'}`}
             >
               Full URI
             </button>
