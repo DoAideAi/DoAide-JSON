@@ -78,7 +78,7 @@ export const routes = [
   {
     path: '/schema-validator',
     h1: 'JSON Schema Validator',
-    title: 'JSON Schema Validator Online — Draft 7 & 2020-12 | DoAide JSON',
+    title: 'JSON Schema Validator Online — Draft-07 | DoAide JSON',
     description:
       'Validate JSON data against a JSON Schema and see every error with its path. Free online JSON Schema validator powered by Ajv.',
   },
