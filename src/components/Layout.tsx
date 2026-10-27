@@ -1,11 +1,13 @@
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import { tools } from '../utils/tools';
 import { useState } from 'react';
+import useSEO from '../hooks/useSEO';
 
 export default function Layout() {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
   const isHome = location.pathname === '/';
+  useSEO(location.pathname.replace(/\/+$/, '') || '/');
 
   return (
     <div className="min-h-screen flex flex-col">
